@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+
+<head>
+<title>Trozia</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900">
+<link rel="stylesheet" href="assests/css/bootstrap.css">
+<link rel="stylesheet" href="assests/css/fonts.css">
+<link rel="stylesheet" href="assests/css/style-4.css" id="main-styles-link">
+<style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+</head>
+<body>
+<div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+<div class="preloader">
+<div class="preloader-body">
+<div class="preloader-container">
+<span class="animated-preloader"></span>
+</div>
+<div class="cssload-container">
+</div><img src="assests/images/footer-logo.png" alt="" width="162" height="44" />
+</div>
+</div>
+<div class="page">
+<header class="section page-header page-header-absolute-2">
+
+<div class="rd-navbar-wrap">
+<nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-lg-auto-height="false" data-xl-auto-height="false" data-xxl-auto-height="false">
+<div class="rd-navbar-main-outer">
+<div class="rd-navbar-main">
+
+<div class="rd-navbar-panel">
+
+<button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+
+<div class="rd-navbar-brand">
+<a class="brand" href="index.html"><img class="brand-logo-light" src="images/footer-logo.png" alt="" width="162" height="44" /></a>
+</div>
+</div>
+<div class="rd-navbar-main-element">
+<div class="rd-navbar-nav-wrap">
+<ul class="rd-navbar-nav">
+
+<li class="rd-nav-item"><a class="rd-nav-link" href="#home">Home</a>
+</li>
+<li class="rd-nav-item"><a class="rd-nav-link" href="#wallet">Wallet</a>
+</li>
+<li class="rd-nav-item"><a class="rd-nav-link" href="#about">About</a>
+</li>
+<li class="rd-nav-item"><a class="rd-nav-link" href="#roadmap">Roadmap</a>
+</li>
+
+<li class="rd-nav-item"><a class="rd-nav-link" href="https://tronscan.org/#/contract/TBwz4F5bMntpM9urrZbDUr3jMzWFrKb9A5" target="_blank">CONTRACT</a>
+</li>
+<li class="rd-nav-item"><a class="rd-nav-link" href="#">Trade Trozia</a>
+</li>
+
+
+</ul>
+
+</div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="section gradient-7 bg-vide-1 bg-vide-3" id="home">
+<div class="bg-vide" data-vide-bg="video/video-4" data-vide-options="posterType: jpg, position: 50% 50%"></div>
+<div class="section-inset-13">
+<div class="container">
+<div class="row row-80">
+<div class="col-md-6 col-xl-6 wow fadeInLeft mob-mb-top">
+<h3>TRX Invest<br> Powerful Platform</h3>
+<p>TRON Money is a universal invest platform and service provider. </p>
+<h4 class="baner-h4">6-12% Daily</h4>
+<h4 class="baner-h4">22% Referral Rewards</h4>
+
+</div>
+<div class="col-md-6 col-xl-6 position-static mob-mb text-center">
+<h3 id="totalTrx">...</h3>
+<h4>Invested TRX</h4>
+<br>
+<h3 id="totalInvestors">...</h3>
+<h4>Total Investors</h4>
+<br>
+<h3 id="totalRefRewards">...</h3>
+<h4>Total referral rewards TRX</h4>
+<br><br>
+</div>
+
+</div>
+</div>
+</div>
+<svg class="wave-2" x="0px" y="0px" width="1920px" height="200px" viewBox="0 0 1920 200" preserveAspectRatio="xMidYMid slice">
+<path fill="#fff" d="M0 160 Q250 200 500 145 Q750 90 1050 155 Q1350 200 1550 145 T 1920 0 V200 H0 Z"></path>
+</svg>
+</section>
+
+<section class="section section-lg bg-white custom-section" id="wallet">
+<div class="container">
+<h3 class="ta-center">Your TRX Wallet</h3>
+<div class="row row-30 ">
+<div class="col-md-6 col-lg-6 wow fadeInLeft">
+<div class="dao-wallet-box custom-box-mb-20">
+<h6 class="font-weight-medium">Invest TRX</h6>
+<p>Total invested TRX: <span id="yourInvestment">...</span> </p>
+<div class="custom-input-block">
+<input class="form-input" id="trxToInvest" type="text" name="name" placeholder="Invest Amount (minimum 50 TRX)">
+</div>
+<a href="#" class="button button-isi button-primary coming-soon-a" onclick="deposit()">Invest</a>
+<br><br>
+<div style="color:#2fc7b5;">2-4 TRX transaction fee will be applied</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 wow fadeInRight">
+<div class="dao-wallet-box custom-box-mb-20">
+<h6 class="font-weight-medium">Referral Link</h6>
+<p><span>22%</span> referral comission</p>
+<div class="custom-input-block">
+<input class="form-input" id="ref_link" type="text" name="name" placeholder="Link" disabled>
+</div>
+<a href="#" class="button button-isi button-primary coming-soon-a" onclick="copytext('#ref_link')" id="copy">Copy</a>
+<br><br>
+<div style="color:#2fc7b5;">Link activated.</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 wow fadeInLeft">
+<div class="dao-wallet-box custom-box-mb-20">
+<h6 class="font-weight-medium">Available to withdraw</h6>
+
+<p><span class="bold-dig" id="available">...</span> <span class="bold-dig">TRX</span></p>
+<p>My percentage per day: <span id="dayPercent">0</span>%</p>
+
+<a href="#" class="button button-isi button-primary coming-soon-a" onclick="reinvest()">REINVEST</a>
+<a href="#" class="button button-isi button-primary coming-soon-a" onclick="withdraw()">WITHDRAW </a>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 wow fadeInRight">
+<div class="dao-wallet-box custom-box-mb-20">
+<h6 class="font-weight-medium">My statistics</h6>
+<p class="withdraw-aval">My investment: <span id="myInvestmentStat">...</span> <img src="images/trx.png" alt="" width="20px" class="withdraw-token"> </p>
+<p class="withdraw-aval">My withdrawals: <span id="myWithdrawalsStat">...</span> <img src="images/trx.png" alt="" width="20px" class="withdraw-token"> </p>
+<p class="withdraw-aval">My referral rewards: <span id="myRefsStat">...</span> <img src="images/trx.png" alt="" width="20px" class="withdraw-token"> </p>
+<!-- <p class="withdraw-aval">My referrals (7 levels): <span id="myRefsNum">...</span> <img src="images/user.png" alt="" width="15px" class="withdraw-token"> </p>
+<p class="withdraw-aval">My TMT bonus tokens: <span id="myTMT">...</span> <img src="images/TMT.png" alt="" width="22px" class="withdraw-token"> </p> -->
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-lg gradient-7 wave-wrap" id="about">
+<svg class="wave-1" width="1920" height="378" viewBox="0 0 1920 378" preserveAspectRatio="xMidYMid slice">
+<path class="wave-path wave-path-1" d="M0 209.5C0 209.5 251.5 96.3172 563.5 194.789C875.5 293.261 1045 83.319 1386.5 162.096C1728 240.873 1920 176 1920 176V426H0V209.5Z"></path>
+<path class="wave-path wave-path-2" d="M1920 140.986C1920 140.986 1668.5 -72.0314 1356.5 76.7238C1044.5 225.479 875 -91.667 533.5 27.3369C192 146.341 0 27.3369 0 27.3369V426H1920V140.986Z"></path>
+</svg>
+<div class="container wow fadeInUp">
+<div class="row row-30 row-md-50 align-items-center flex-md-row-reverse">
+<div class="col-md-5 col-lg-6">
+<img src="assests/images/image-7-523x376.png" alt="" width="523" height="376">
+</div>
+<div class="col-md-7 col-lg-6 text-left">
+<h3 class="ta-center-mob">Stable earnings</h3>
+<p>You invest 100 TRX and you earn 2% from it 
+<br>
+If you invest more TRX you get more TRX
+</p>
+<h6 class="font-weight-medium ta-center-mob">Leading to earn more %</h6>
+<ul class="list-marked-3 d-inline-block d-md-block">
+<li>100 TRX: + 2% per day</li>
+<!-- <li>5000 TMT: + 4% per day</li>
+<li>10000 TMT: + 6% per day</li> -->
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-lg section-inset-7 bg-white">
+<div class="container offset-negative-top-3">
+
+<div class="row row-lg row-30 row-md-50 align-items-center justify-content-center">
+<div class="col-md-10 col-lg-5 col-xl-6 wow fadeInLeft"><img class="img-style-4" src="images/image-8-550x376.png" alt="" width="550" height="376" />
+</div>
+<div class="col-md-10 col-lg-7 col-xl-6">
+<div class="box-style-5">
+<h3 class="ta-center-mob">Addressable Market</h3>
+
+<div class="owl-carousel owl-nav-1 owl-style-3" data-items="1" data-nav="true" data-dots="true" data-margin="30">
+<div>
+<div class="box-style-4 ta-center-mob">
+ 
+<h6 class="font-weight-medium">Increased Adoption</h6>
+<ul class="list-marked-4 list-style-3 ta-center-mob">
+<li>Working capital.</li>
+<li>Hedging.</li>
+<li>Collateralized leverage.</li>
+</ul>
+</div>
+<div class="box-style-4 ta-center-mob">
+
+<h6 class="font-weight-medium">Full Decentralization</h6>
+<ul class="list-marked-4 ta-center-mob">
+<li>Merchant receipts.</li>
+<li>Cross-border transactions.</li>
+<li>Remittances.</li>
+</ul>
+</div>
+</div>
+<div>
+<div class="box-style-4 ta-center-mob">
+
+<h6 class="font-weight-medium">Increased Adoption </h6>
+<ul class="list-marked-4 list-style-3 ta-center-mob">
+<li>Charities.</li>
+<li>NGOs.</li>
+</ul>
+</div>
+<div class="box-style-4 ta-center-mob">
+
+<h6 class="font-weight-medium">Full Decentralization</h6>
+<ul class="list-marked-4 ta-center-mob">
+<li>Gaming.</li>
+<li>Prediction markets.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-xl gradient-7 wave-wrap text-center text-lg-left" id="token-sale">
+<svg class="wave-1" width="1920" height="378" viewBox="0 0 1920 378" preserveAspectRatio="xMidYMid slice">
+<path class="wave-path wave-path-1" d="M0 209.5C0 209.5 251.5 96.3172 563.5 194.789C875.5 293.261 1045 83.319 1386.5 162.096C1728 240.873 1920 176 1920 176V426H0V209.5Z"></path>
+<path class="wave-path wave-path-2" d="M1920 140.986C1920 140.986 1668.5 -72.0314 1356.5 76.7238C1044.5 225.479 875 -91.667 533.5 27.3369C192 146.341 0 27.3369 0 27.3369V426H1920V140.986Z"></path>
+</svg>
+<div class="container tabs-custom tabs-corporate wow fadeInUp">
+<div class="row row-xl row-30  justify-content-center">
+<div class="col-md-10 col-lg-6">
+<div class="inset-left-xl-30">
+<h3 class="wow fadeInUp">Referral Commission Distribution</h3>
+<div class="group-custom-1 d-lg-flex flex-lg-column-reverse">
+<ul class="list-default inset-right-xl-70">
+<li class="list-default-item"><span>Level 1</span><span>10%</span></li>
+<li class="list-default-item"><span>Level 2 </span><span> 3%</span></li>
+<li class="list-default-item"><span>Level 3</span><span> 3%</span></li>
+<li class="list-default-item"><span>Level 4</span><span>2%</span></li>
+<li class="list-default-item"><span>Level 5</span><span>2%</span></li>
+<li class="list-default-item"><span>Level 6</span><span>1%</span></li>
+<li class="list-default-item"><span>Level 7</span><span>1%</span></li>
+</ul>
+<div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-lg-6">
+<div class="tab-content ta-center">
+<a class="nav-link active " href="#tabs-1-1" data-toggle="tab">22 % of the purchase amount</a>
+<div class="tab-pane fade show active pt-154" id="tabs-1-1">
+<div class="donut-chart" data-donut="[{ &quot;Title&quot;: &quot;Level 1 (10%)&quot;, &quot;Percentage&quot;: &quot;0.4&quot;, &quot;Fill&quot;: &quot;#00c12f&quot; }, 
+                  { &quot;Title&quot;: &quot;Level 2 (3%)&quot;, &quot;Percentage&quot;: &quot;0.15&quot;, &quot;Fill&quot;: &quot;#f4ec07&quot; },
+                  { &quot;Title&quot;: &quot;Level 3 (3%)&quot;, &quot;Percentage&quot;: &quot;0.15&quot;, &quot;Fill&quot;: &quot;#0056ab&quot; },
+                  { &quot;Title&quot;: &quot;Level 4 (2%)&quot;, &quot;Percentage&quot;: &quot;0.1&quot;, &quot;Fill&quot;: &quot;#f4a71a&quot; },
+                  { &quot;Title&quot;: &quot;Level 5 (2%)&quot;, &quot;Percentage&quot;: &quot;0.1&quot;, &quot;Fill&quot;: &quot;#b673ff&quot; },
+                  { &quot;Title&quot;: &quot;Level 6 (1%)&quot;, &quot;Percentage&quot;: &quot;0.05&quot;, &quot;Fill&quot;: &quot;#fa7a7a&quot; },
+                  { &quot;Title&quot;: &quot;Level 7 (1%)&quot;, &quot;Percentage&quot;: &quot;0.05&quot;, &quot;Fill&quot;: &quot;#00ffff&quot; }
+                  ]" data-thickness=".16">
+</div>
+</div>
+<div class="tab-pane fade" id="tabs-1-2">
+<div class="donut-chart" data-donut="[{ &quot;Title&quot;: &quot;ICO Token Supply&quot;, &quot;Percentage&quot;: &quot;0.14&quot;, &quot;Fill&quot;: &quot;#FFC670&quot; }, { &quot;Title&quot;: &quot;Reserve Fund&quot;, &quot;Percentage&quot;: &quot;0.21&quot;, &quot;Fill&quot;: &quot;#5BEDCA&quot; }, { &quot;Title&quot;: &quot;Team&quot;, &quot;Percentage&quot;: &quot;0.16&quot;, &quot;Fill&quot;: &quot;#CB5788&quot; }, { &quot;Title&quot;: &quot;Foundation&quot;, &quot;Percentage&quot;: &quot;0.2&quot;, &quot;Fill&quot;: &quot;#226295&quot; }, { &quot;Title&quot;: &quot;Advisor&quot;, &quot;Percentage&quot;: &quot;0.15&quot;, &quot;Fill&quot;: &quot;#57CCF2&quot; }, { &quot;Title&quot;: &quot;Community&quot;, &quot;Percentage&quot;: &quot;0.14&quot;, &quot;Fill&quot;: &quot;#D7ED98&quot; }]" data-thickness=".16"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section section-md bg-white" id="user-center">
+<div class="container">
+<div class="row row-xl row-30 align-items-center justify-content-center">
+<div class="col-sm-6 col-md-4 col-lg-5 col-xl-6 wow fadeInLeft"><img src="images/image-9-569x640.jpg" alt="" width="569" height="640" />
+</div>
+<div class="col-md-8 col-lg-7 col-xl-6 wow fadeInRight">
+<div class="inset-bottom-xl-50">
+<h3>What Properties of Trozia Function Similarly to Money?</h3>
+<p>Generally, money has four functions:</p>
+<div class="row row-sm row-30">
+<div class="col-sm-6">
+
+<article class="service-modern">
+<div class="service-modern-icon"><span class="linearicons-credit-card"></span></div>
+<div class="heading-6 service-modern-title"><a href="#">A store of value</a></div>
+
+</article>
+</div>
+<div class="col-sm-6">
+
+<article class="service-modern">
+<div class="service-modern-icon"><span class="linearicons-mouse-left"></span></div>
+<div class="heading-6 service-modern-title"><a href="#">A standard of deferred payment</a></div>
+
+</article>
+</div>
+<div class="col-sm-6">
+
+<article class="service-modern">
+<div class="service-modern-icon"><span class="linearicons-shield-check"></span></div>
+ <div class="heading-6 service-modern-title"><a href="#">A unit of account</a></div>
+
+</article>
+</div>
+<div class="col-sm-6">
+
+<article class="service-modern">
+<div class="service-modern-icon"><span class="linearicons-group-work"></span></div>
+<div class="heading-6 service-modern-title"><a href="#">A medium of exchange</a></div>
+
+</article>
+</div>
+</div>
+<div class="group-xl group-middle justify-content-center offset-top-2"><a class="button button-isi button-primary" href="#">Trade TMT</a>
+<div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</section>
+<section class="section section-lg section-inset-9 gradient-7 wave-wrap text-center" id="roadmap">
+<svg class="wave-1" width="1920" height="378" viewBox="0 0 1920 378" preserveAspectRatio="xMidYMid slice">
+<path class="wave-path wave-path-1" d="M0 209.5C0 209.5 251.5 96.3172 563.5 194.789C875.5 293.261 1045 83.319 1386.5 162.096C1728 240.873 1920 176 1920 176V426H0V209.5Z"></path>
+<path class="wave-path wave-path-2" d="M1920 140.986C1920 140.986 1668.5 -72.0314 1356.5 76.7238C1044.5 225.479 875 -91.667 533.5 27.3369C192 146.341 0 27.3369 0 27.3369V426H1920V140.986Z"></path>
+</svg>
+<div class="container">
+<h3 class="wow fadeInUp">Roadmap</h3>
+<p class="wow fadeInUp">Our roadmap is divided into various crucial stages that help us build a great Invest platform for you.</p>
+<div class="owl-carousel owl-style-4 owl-nav-2" data-items="2" data-sm-items="3" data-md-items="4" data-nav="true">
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">5.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Blockchain development</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">6.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Web development</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">7.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Launch of the project</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">8.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Integrating blockchain Ethereum</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">9.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Integrating LINK</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">10.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Airdrop: 20  : 1 USDN</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">11.2020</time>
+<div class="timeline-modern-dot"></div>
+ <div class="timeline-modern-title"><a href="#">Airdrop: 18 TMT : 1 EURN</a></div>
+</div>
+<div class="timeline-modern">
+<time class="timeline-modern-time" datetime="2019">12.2020</time>
+<div class="timeline-modern-dot"></div>
+<div class="timeline-modern-title"><a href="#">Large partnerships</a></div>
+</div>
+</div><a class="button button-isi button-white wow fadeInUp" href="https://tronscan.org/#/contract/TBwz4F5bMntpM9urrZbDUr3jMzWFrKb9A5">contract</a>
+<br><br><br><br><br>
+
+<div class="container wow fadeInUp">
+<div class="footer-creative-brand">
+<a class="brand" href="index.html"><img class="brand-logo-light" src="assests/images/footer-logo.png" alt="" width="162" height="44" /></a>
+</div>
+<p class="soc">
+<a href="https://t.me/TRON_Money_Dapp" target="_blank"> <img src="assests/images/mail.png" alt="" width="26px"></a>
+</p>
+<p class="rights text-center"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>.&nbsp;</span><span>TRON Money</span><span>.&nbsp;</span><span>All Rights Reserved.</span>
+</p>
+</div>
+</div>
+</section>
+
+
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<script src="assests/js/core.min.js"></script>
+<script src="assests/js/script.js"></script>
+<script src="assests/js/custom.js"></script>
+</body>
+</html>

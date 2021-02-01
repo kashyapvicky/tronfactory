@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Tronfactory | A Decentralized Smart-Contract" />
+    <title>Tronfactory | A Decentralized Smart-Contract</title>
+    <link rel="shortcut icon" type="image/x-icon" href="newx.png">
+    <link rel="stylesheet" href="assests/static/css/globalc672.css?v=349">
+    <style></style>
+    <link href="static/css/main.c466cd2a.chunk.css" rel="stylesheet">
+</head>
+
+<body class="bb"><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>!function (l) { function e(e) { for (var r, t, n = e[0], o = e[1], u = e[2], f = 0, i = []; f < n.length; f++)t = n[f], p[t] && i.push(p[t][0]), p[t] = 0; for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]); for (s && s(e); i.length;)i.shift()(); return c.push.apply(c, u || []), a() } function a() { for (var e, r = 0; r < c.length; r++) { for (var t = c[r], n = !0, o = 1; o < t.length; o++) { var u = t[o]; 0 !== p[u] && (n = !1) } n && (c.splice(r--, 1), e = f(f.s = t[0])) } return e } var t = {}, p = { 1: 0 }, c = []; function f(e) { if (t[e]) return t[e].exports; var r = t[e] = { i: e, l: !1, exports: {} }; return l[e].call(r.exports, r, r.exports, f), r.l = !0, r.exports } f.m = l, f.c = t, f.d = function (e, r, t) { f.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t }) }, f.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, f.t = function (r, e) { if (1 & e && (r = f(r)), 8 & e) return r; if (4 & e && "object" == typeof r && r && r.__esModule) return r; var t = Object.create(null); if (f.r(t), Object.defineProperty(t, "default", { enumerable: !0, value: r }), 2 & e && "string" != typeof r) for (var n in r) f.d(t, n, function (e) { return r[e] }.bind(null, n)); return t }, f.n = function (e) { var r = e && e.__esModule ? function () { return e.default } : function () { return e }; return f.d(r, "a", r), r }, f.o = function (e, r) { return Object.prototype.hasOwnProperty.call(e, r) }, f.p = "/"; var r = window.webpackJsonp = window.webpackJsonp || [], n = r.push.bind(r); r.push = e, r = r.slice(); for (var o = 0; o < r.length; o++)e(r[o]); var s = n; a() }([])</script>
+    <script src="static/js/2.5b771aab.chunk.js"></script>
+    <script src="static/js/main.b8402ba7.chunk.js"></script>
+</body>
+
+</html>
+<script src="assests/static/js/main5e1f.js?v=2"></script>
+<script>function closeModal() {
+        $(`[data-modal]`).removeClass('active');
+        return false
+    }
+
+
+    $('body').on('click', '.read_more', function () {
+        $(this).parent().find('div').css({ height: 'auto' });
+        $(this).hide();
+        return false;
+    });
+
+    function openModal(name) {
+        $(`[data-modal]`).removeClass('active');
+        $(`[data-modal="${name}"]`).addClass('active');
+
+        $('.modal').on('click', function (e) {
+            if (!$(e.target).closest('.modal-container').length) {
+                closeModal();
+                $('.modal-container').unbind();
+            }
+        })
+
+        return false
+    }
+
+
+    var first_modal = ''
+    $('body').on('click', '.faq__item', function () {
+        if ($(this).hasClass('active')) {
+            return
+        }
+
+        let e = $('.faq__item.active');
+        $(e).find('.faq__answer').css({ height: 0 + 'px' })
+        setTimeout(() => {
+            $(e).removeClass('active');
+        }, 400)
+
+        let height = $(this).find('p').innerHeight();
+        $(this).addClass('active');
+        $(this).find('.faq__answer').css({ height: height + 38 + 'px' })
+        setTimeout(() => {
+            $(this).find('.faq__answer').css({ height: 'auto' })
+        }, 400)
+    });
+
+    $('body').on('click', '.modal__header button , .close-modal', function () {
+        $(this).parents('.modal').removeClass('active');
+    })
+
+
+    $('body').on('click', '.btn-menu', function () {
+        first_modal = 'menu'
+        $('[data-modal="menu"]').addClass('active')
+        return false;
+    })
+    $('body').on('click', '[data-toggle]', function () {
+        if ($(this).data('toggle') === 'back') {
+            $('.modal.active').removeClass('active');
+            $(`[data-modal="${first_modal}"]`).addClass('active');
+            return false
+        } else {
+            if ($(this).data('toggle') !== 'lang') {
+                first_modal = $(this).data('toggle');
+            }
+        }
+        $('.modal.active').removeClass('active');
+        $(`[data-modal="${$(this).data('toggle')}"]`).addClass('active');
+
+        $('.modal').on('click', function (e) {
+            if (!$(e.target).closest('.modal-container').length) {
+                closeModal();
+                $('.modal-container').unbind();
+            }
+        })
+        return false
+    })</script>
+<script>function countdown(end, now = new Date().getTime() / 1000) {
+        // Get today's date and time
+        var distance = (end - now) * 1000;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        if (String(seconds).length === 1) seconds = '0' + seconds;
+        if (String(minutes).length === 1) minutes = '0' + minutes;
+        if (String(hours).length === 1) hours = '0' + hours;
+        if (String(days).length === 1) days = '0' + days;
+        // Display the result in the element with id="demo"
+        return days + ":" + hours + ":" + minutes + ":" + seconds + "";
+    }
+
+
+    function aviable(date_withdraw, date_end, amount, now = new Date().getTime()) {
+
+        let time = now <= date_end ? now - date_withdraw : date_end - date_withdraw;
+
+        let pay = ((amount * 1.8) / 777600) * time;
+        return pay;
+    }
+
+    function initSlider() {
+
+        new Swiper('.swiper-container', {
+            // loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+        })
+
+
+    }</script>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tronfactory | A Decentralized Smart-Contract" />
+    <title>Tronfactory | A Decentralized Smart-Contract</title>
+    <link rel="shortcut icon" type="image/x-icon" href="newx.png">
+    <!-- <link rel="stylesheet" href="assests/css/style.css"> -->
+
+
+    <!-- my new site css start -->
+    <!-- <link rel="stylesheet" href="assests/unpkg.com/swiper%406.1.2/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="assests/static/css/globalc672.css?v=349">
+
+    
+    <!-- <link rel="shortcut icon" href="assests/static/favicon/favicon.ico" type="image/x-icon"> -->
+        <style>
+    
+        </style>
+    </head>
+  <body class="bb">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+<!-- <script src="assests/js/jquery-1.12.4.min.js" type = "text/babel"></script> 
+<script src="assests/bootstrap/js/bootstrap.min.js" type = "text/babel"></script> 
+<script src="assests/js/scripts.js" type = "text/babel"></script> -->
+
+<!-- <script src="assests/unpkg.com/swiper%406.1.2/swiper-bundle.min.js"></script> -->
+<script src="assests/static/js/main5e1f.js?v=2"></script>
+
+<script>
+
+  function closeModal() {
+      $(`[data-modal]`).removeClass('active');
+      return false
+  }
+
+
+  $('body').on('click', '.read_more', function () {
+      $(this).parent().find('div').css({height: 'auto'});
+      $(this).hide();
+      return false;
+  });
+
+  function openModal(name) {
+      $(`[data-modal]`).removeClass('active');
+      $(`[data-modal="${name}"]`).addClass('active');
+
+      $('.modal').on('click', function (e) {
+          if (!$(e.target).closest('.modal-container').length) {
+              closeModal();
+              $('.modal-container').unbind();
+          }
+      })
+
+      return false
+  }
+
+
+  var first_modal = ''
+  $('body').on('click', '.faq__item', function () {
+      if ($(this).hasClass('active')) {
+          return
+      }
+
+      let e = $('.faq__item.active');
+      $(e).find('.faq__answer').css({height: 0 + 'px'})
+      setTimeout(() => {
+          $(e).removeClass('active');
+      }, 400)
+
+      let height = $(this).find('p').innerHeight();
+      $(this).addClass('active');
+      $(this).find('.faq__answer').css({height: height + 38 + 'px'})
+      setTimeout(() => {
+          $(this).find('.faq__answer').css({height: 'auto'})
+      }, 400)
+  });
+
+  $('body').on('click', '.modal__header button , .close-modal', function () {
+      $(this).parents('.modal').removeClass('active');
+  })
+
+
+  $('body').on('click', '.btn-menu', function () {
+      first_modal = 'menu'
+      $('[data-modal="menu"]').addClass('active')
+      return false;
+  })
+  $('body').on('click', '[data-toggle]', function () {
+      if ($(this).data('toggle') === 'back') {
+          $('.modal.active').removeClass('active');
+          $(`[data-modal="${first_modal}"]`).addClass('active');
+          return false
+      } else {
+          if ($(this).data('toggle') !== 'lang') {
+              first_modal = $(this).data('toggle');
+          }
+      }
+      $('.modal.active').removeClass('active');
+      $(`[data-modal="${$(this).data('toggle')}"]`).addClass('active');
+
+      $('.modal').on('click', function (e) {
+          if (!$(e.target).closest('.modal-container').length) {
+              closeModal();
+              $('.modal-container').unbind();
+          }
+      })
+      return false
+  })
+
+
+</script>
+
+<script>
+
+
+  function countdown(end, now = new Date().getTime() / 1000) {
+      // Get today's date and time
+      var distance = (end - now) * 1000;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      if (String(seconds).length === 1) seconds = '0' + seconds;
+      if (String(minutes).length === 1) minutes = '0' + minutes;
+      if (String(hours).length === 1) hours = '0' + hours;
+      if (String(days).length === 1) days = '0' + days;
+      // Display the result in the element with id="demo"
+      return days + ":" + hours + ":" + minutes + ":" + seconds + "";
+  }
+
+
+  function aviable(date_withdraw, date_end, amount, now = new Date().getTime()) {
+
+      let time = now <= date_end ? now - date_withdraw : date_end - date_withdraw;
+
+      let pay = ((amount * 1.8) / 777600) * time;
+      return pay;
+  } 
+
+  function initSlider() {
+
+      new Swiper('.swiper-container', {
+          // loop: true,
+          effect: 'fade',
+          autoplay: {
+              delay: 5000,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+          },
+      })
+
+
+  }
+  </script>
